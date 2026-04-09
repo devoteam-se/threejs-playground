@@ -24,9 +24,8 @@ const renderCube = () => {
 
   function animate(time: number) {
     renderer.render(scene, camera);
-    // console.log('time', time);
-    // cube.rotation.x = time / 2000;
-    // cube.rotation.y = time / 1000;
+    cube.rotation.x = time / 2000;
+    cube.rotation.y = time / 1000;
   }
   renderer.setAnimationLoop(animate);
 };
@@ -58,7 +57,7 @@ const renderBug = () => {
 
   camera.position.z = 5;
 
-  function animate(time: number) {
+  function animate(_time: number) {
     renderer.render(scene, camera);
     if (bug) {
       // bug.rotation.x = time / 2000;
