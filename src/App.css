@@ -1,1 +1,12 @@
-/* TODO */
+#canvas-container {
+  margin: 1em;
+  border: 2px dashed;
+  height: 500px;
+}
+
+.buttons {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
